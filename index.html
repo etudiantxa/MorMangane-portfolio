@@ -6,8 +6,8 @@
     <script src="./script.js"></script>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav>
+    <!-- Header -->
+    <header>
       <div id="home">
         <div class="profile_name">
           Mor Mangane
@@ -26,14 +26,14 @@
           <a class="topmenu" href="#about-me">About Me</a>
           <!-- Add the links for Skills, Projects and Recommendation here -->
           <a class="topmenu" href="#skills">skills</a>
-          <a class="topmenu" href="#projects">projects</a>
+          <a class="topmenu" href="#github-projects">projects</a>
           <a class="topmenu" href="#recommendations">recommend</a>
         </div>
       </div>    
-    </nav>
+    </header>
 
     <!-- About Me -->
-    <section id="about-me" class="container">
+    <article id="about-me" class="container">
       <div>
         <img src="https://cdn.pixabay.com/photo/2015/07/17/22/43/student-849826_640.jpg" class="profile_image"/>
       </div>
@@ -50,10 +50,10 @@ Capacité à collaborer au sein d'équipes agiles, à comprendre les besoins des
 Prêt à contribuer au succès d'une entreprise en apportant un regard neuf, de la créativité et un engagement pour le développement d'expériences numériques de qualité.
           </p>
       </div>
-    </section>
+    </article>
               
     <!-- Skills -->
-    <section id="skills">
+    <aside id="skills">
       <h2>Skills</h2>
       <div style="clear:both;"></div>
 
@@ -96,42 +96,19 @@ Prêt à contribuer au succès d'une entreprise en apportant un regard neuf, de 
 
 
       </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
+    </aside>
 
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>1. Plateforme de gestion des tâches collaboratives</h3>
-            <ul>
-              <li>Développement d'une application web pour aider les équipes à gérer leurs tâches, suivre l'avancement des projets, et collaborer efficacement</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>2. Boutique en ligne avec gestion des stocks</h3>
-            <ul>
-              <li>Conception et développement d'un site e-commerce permettant aux utilisateurs de parcourir, acheter et gérer leurs commandes en ligne.</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>3. Portail de formation en ligne</h3>
-            <ul>
-              <li>Développement d'une plateforme de e-learning permettant aux utilisateurs d'accéder à des cours en ligne, de passer des évaluations et de suivre leurs progrès.</li>
-            </ul>
-          </div>
-    </div>
+    <!-- GitHub Projects -->
+    <section id="github-projects" class="projects">
+      <h2>GitHub Projects</h2>
+      <div style="clear:both;"></div>
+      <div id="github-projects-container" class="projects-container">
+        <!-- GitHub projects will be dynamically loaded here -->
+      </div>
     </section>
-    <div style="clear:both;"></div>
 
     <!-- Recommendations -->
-    <section id="recommendations">
+    <aside id="recommendations">
       <h2>Recommendations</h2>
       <div style="clear:both;"></div>
       <div class="all_recommendations" id="all_recommendations">
@@ -158,10 +135,10 @@ Prêt à contribuer au succès d'une entreprise en apportant un regard neuf, de 
           <span>&#8221;</span>
         </div>
       </div>
-    </section>
+    </aside>
 
     <!-- Recommendation Form -->
-    <section id="contact">
+    <aside id="contact">
       <div class="flex_center">
         <fieldset>
           <legend class="introduction">Leave a Recommendation</legend>          
@@ -172,7 +149,7 @@ Prêt à contribuer au succès d'une entreprise en apportant un regard neuf, de 
           </div>
         </fieldset>
       </div>
-    </section>
+    </aside>
 
     <div class="iconbutton">
       <a href="#home">
@@ -188,5 +165,8 @@ Prêt à contribuer au succès d'une entreprise en apportant un regard neuf, de 
       <h3><!-- Add appropriate text here--></h3>
       <button onclick="showPopup(false)">Ok</button>
     </div>
+    <footer>
+      <p>&copy; 2023 Mor Mangane</p>
+    </footer>
   </body>
 </html>
